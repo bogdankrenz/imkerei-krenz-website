@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap');
+
+// Importing variables
+@import './variables.scss';
+
+// Importing Bulma from node_modules
+@import '~bulma/bulma.sass';
+
+*:focus:not(.focus-visible) {
+	outline: none;
+}
+
+// Video
+
+.overlay {
+	position: absolute;
+	padding: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: transparent;
+	transition: all 1s;
+}
+.svg-dropshadow {
+	filter: drop-shadow( 1px 1px 4px rgba(0, 0, 0, 0.3));
+}
+
+// Box
+.box.is-hoverable {
+	cursor: pointer;
+	box-shadow: 0 2rem 3rem -1.25rem rgba(10,10,10,.2);
+	transition-duration: 250ms;
+	transition-property: box-shadow,transform;
+	will-change: box-shadow,transform;
+}
+.box.is-hoverable:hover {
+	box-shadow: 0 3rem 3rem -1.25rem rgba(10,10,10,.2);
+	transform: translateY(-.5rem);
+}
+
+// *:not(path):not(g) {
+// 	color:                    hsla(210, 100%, 100%, 0.9) !important;
+// 	background:               hsla(210, 100%,  50%, 0.5) !important;
+// 	outline:    solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+
+// 	box-shadow: none !important;
+// }
+
+.center, .center-column, .right, .left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.center {
+		justify-content: flex-start;
+	}
+}
+
+@media (max-width: 768px) {
+	.mobile-bottom {
+		padding-bottom: 1.375rem !important;
+	}
+}
+
+.center-column {
+    flex-direction: column;
+}
+
+.right  { justify-content: flex-end;   }
+.left   { justify-content: flex-start; }

@@ -1,0 +1,75 @@
+// VARIABLES
+
+$primary-color: #FDCE36;
+$dark: #222222;
+$red: #8B384B;
+$darker: #302218;
+$paypal: #ffc439;
+$secondary-color: #3C64D2;
+$green: #A0CC7C;
+$yellow: #DFB879;
+$grey: #9F9F9F;
+$light-grey: #d8d8d8;
+
+// Navbar
+$navbar-height: 6rem;
+$navbar-box-shadow-color: #000;
+$navbar-box-shadow-size: 0 12px 0 0;
+$navbar-item-img-max-height: 4rem;
+
+// Tabs
+$tabs-link-color: $grey;
+$tabs-link-hover-color: $grey;
+$tabs-link-hover-border-bottom-color: $light-grey;
+$tabs-border-bottom-color: $light-grey;
+
+// Images
+$dimensions: 16 24 32 48 64 96 128 170 290;
+
+// Colors
+$primary: $primary-color;
+$danger: $red;
+$success: $green;
+$warning: $paypal;
+$light: $grey;
+$title-color: $dark;
+$text: $darker;
+$body-color: $darker;
+$info: $secondary-color;
+//$body-background-color: $dark;
+$link: $secondary-color;
+$family-sans-serif: 'Karla', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// Spacing
+$spacing-values: ("0": 0, "1": 0.25rem, "2": 0.5rem, "3": 0.75rem, "4": 1rem, "5": 1.5rem, "6": 3rem, "7": 6rem, "8": 8rem,);
+$column-gap: 0.125rem !default;
+// Headlines
+// $size-1: 3rem;
+// $size-2: 2.5rem;
+// $size-3: 2.25rem;
+// $size-4: 2rem;
+// $size-5: 1.5rem;
+// $size-6: 1.25rem;
+// $size-7: 1rem;
+
+
+// Fonts
+// $body-line-height: 1.5;
+// $subtitle-line-height: 1.5;
+// $title-weight: 900;
+// $weight-light: 400;
+// $weight-normal: 600;
+// $weight-medium: 700;
+// $weight-semibold: 800;
+// $weight-bold: 900;
+// $body-weight: $weight-light;
+// $strong-weight: $weight-medium;
+
+// Box
+$box-radius: 16px;
+$box-shadow: 0px 9.38125px 43.3324px rgba(0, 0, 0, 0.0417275), 0px 5.25905px 24.2918px rgba(0, 0, 0, 0.035), 0px 2.79304px 12.9012px rgba(0, 0, 0, 0.0282725), 0px 1.16225px 5.36848px rgba(0, 0, 0, 0.0196802);
+
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../node_modules/bulma/sass/helpers/spacing.sass";
+@import "helpers.sass";

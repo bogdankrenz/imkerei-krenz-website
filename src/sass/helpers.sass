@@ -1,0 +1,452 @@
+.navbar.bottom
+  font-size: 1.125rem
+  padding: 2rem
+  +touch
+    padding: 2rem
+  .margin-right
+    margin-right: 3rem
+    +fullhd
+      margin-right: 7rem
+
+.navbar.bottom a:hover
+  text-decoration: underline
+
+.is-rounded
+  border-radius: 290486px
+
+.navbar-item
+  +touch
+    justify-content: center !important
+    & img
+      width: 6rem
+      height: 2rem
+      max-height: 1.75rem
+
+.box
+  &.float
+    width: 35vw
+    margin: 0 auto
+    bottom: -90px
+    right: 8%
+    position: absolute
+    padding: 1.5rem 2rem
+    +touch
+      width: 40vw
+    +mobile
+      width: 90%
+      right: 4%
+  &.login
+    padding: 3rem
+    width: 420px
+    margin: 0 auto
+
+.mobile-margin
+  +mobile
+    margin-top: 100px
+
+.columns
+  +mobile
+    &.is-reversed-mobile
+      display: flex
+      flex-direction: column-reverse
+
+.big-margin
+  +mobile
+    margin: 1rem !important
+  +tablet
+    margin: 2rem !important
+  +desktop
+    margin: 2rem !important
+  +fullhd
+    margin: 6rem !important
+
+.main-content
+  +mobile
+    margin: 0 !important
+  +tablet
+    margin: 0 1rem !important
+  +desktop
+    margin: 0 2rem !important
+  +fullhd
+    margin: 0 6rem !important
+
+.hero-padding
+  +mobile
+    padding: 3rem !important
+  +tablet
+    padding: 2rem !important
+  +desktop
+    padding: 2rem !important
+  +widescreen
+    padding: 4rem !important
+  +fullhd
+    padding: 5rem !important
+
+p.help
+  font-size: 1rem
+  font-weight: 700
+
+input.is-danger
+  border: 2px solid
+
+.list
+  margin-left: 2em
+  margin-right: 1em
+  margin-top: 1em
+  ul
+    list-style: none
+  li
+    font-weight: 600
+    margin-bottom: 0.25em
+    &:before
+      top: 10px
+      left: -12px
+      position: relative
+      content: ''
+      display: inline-block
+      height: 1.4em
+      width: 1.4em
+      background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg width="32" height="25" viewBox="0 0 32 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 10.5L11.5 20.5L30 2" stroke="%23698F7C" stroke-width="5"/></svg>')
+      background-size: contain
+      background-repeat: no-repeat
+      margin-left: -1.4em
+
+.logo
+  margin: 0 10px 30px 20px
+  +mobile
+    max-width: 290px
+
+.api-input-text
+  -webkit-appearance: none
+  align-items: center
+  border: 1px solid transparent
+  font-size: 1.25rem
+  box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05)
+  max-width: 100%
+  width: 100%
+  background-color: white
+  border-color: #dbdbdb
+  border-radius: 4px
+  color: #363636
+  display: inline-flex
+  height: 2.5em
+  justify-content: flex-start
+  line-height: 1.5
+  padding-top: calc(0.5em - 1px)
+  padding-bottom: calc(0.5em - 1px)
+  position: relative
+  vertical-align: top
+  border-radius: 290486px
+  padding-left: calc(calc(0.75em - 1px) + 0.375em)
+  padding-right: calc(calc(0.75em - 1px) + 0.375em)
+
+.api-button.api-button-submit
+  background-color: #648876
+  border-color: transparent
+  color: #fff
+  border-radius: 290486px
+  padding-left: calc(1em + 0.25em)
+  padding-right: calc(1em + 0.25em)
+  display: flex
+  width: 100%
+  font-size: 1.25rem
+  font-weight: 700 !important
+  border-width: 1px
+  cursor: pointer
+  justify-content: center
+  padding-bottom: calc(0.5em - 1px)
+  padding-top: calc(0.5em - 1px)
+  text-align: center
+  white-space: nowrap
+  -webkit-appearance: none
+  align-items: center
+  border: 1px solid transparent
+  box-shadow: none
+  height: 2.5em
+  line-height: 1.5
+  position: relative
+  vertical-align: top
+
+.api-input-holder
+  margin-bottom: 0.75rem
+.g-recaptcha
+  text-align: center
+  margin-top: 2rem
+  margin-bottom: 1rem
+
+.api-button-holder
+  margin-top: 1.5rem
+
+.g-recaptcha>div
+  display: inline-block
+
+.api-checkbox-label
+  padding-left: 2rem
+
+.strength-message-bad
+  font-size: 1rem
+
+.strength-message-good
+  font-size: 1rem
+
+.strength-container-inner
+  border-radius: 4px
+
+.strength-container
+  border-radius: 4px
+
+
+.strength-score-1 .strength-container-inner
+  background-color: #8B384B !important
+
+.strength-score-1 .strength-container-inner:after
+  background-color: #8B384B !important
+
+.strength-score-2 .strength-container-inner
+  background-color: #DFB879 !important
+
+.strength-score-2 .strength-container-inner:after
+  background-color: #DFB879 !important
+
+.strength-score-3 .strength-container-inner
+  background-color: #698F7C !important
+
+.strength-score-3 .strength-container-inner:after
+  background-color: #698F7C !important
+
+.pw-strength-wrapper
+  margin-bottom: 1rem
+
+.pw-strength-wrapper .strength-container .strength-container-inner:after
+  content: ''
+  display: block
+  width: 1rem !important
+  height: 1rem !important
+  position: absolute
+  top: -.45rem !important
+  right: -1rem !important
+  border: 1px solid #fff !important
+  border-radius: 50%
+
+.pw-strength-wrapper .strength-error
+  font-size: 1rem !important
+  font-weight: 700
+  color: #8B384B !important
+
+.api-control-checkbox
+  display: block
+  position: relative
+  margin-bottom: 12px
+  cursor: pointer
+  font-size: 1rem
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.api-control-checkbox input
+  position: absolute
+  opacity: 0
+  cursor: pointer
+  height: 0
+  width: 0
+
+.api-control-checkbox-indicator
+  position: absolute
+  top: 0
+  left: 0
+  height: 24px
+  width: 24px
+  background-color: #fff
+  border: 1px solid #dbdbdb
+  border-radius: 8px
+
+.api-control-checkbox:hover input ~ .api-control-checkbox-indicator
+  border-color: #ccc
+
+.api-control-checkbox-indicator:after
+  content: ""
+  position: absolute
+  display: none
+
+.api-control-checkbox input:checked ~ .api-control-checkbox-indicator:after
+  display: block
+
+.api-control-checkbox .api-control-checkbox-indicator:after
+  left: 8px
+  top: 4px
+  width: 7px
+  height: 12px
+  border: solid #698F7C
+  border-width: 0 3px 3px 0
+  -webkit-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)
+
+.pr-box p
+  background-color: #648876 !important
+  color: #fff !important
+
+.pr-box ul
+  background-color: #fff !important
+
+.pr-box-inner
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.17) !important
+  border-radius: 8px !important
+  overflow: hidden !important
+  font-size: 1rem !important
+
+.pr-box.pr-top i
+  border-top: .5625rem solid #ffffff !important
+
+.pr-box.pr-bottom i
+  border-bottom: .5625rem solid #648876 !important
+
+.box.regbox
+  +desktop
+    padding: 3rem
+  +mobile
+    box-shadow: none !important
+    padding: 0
+
+.items
+  position: absolute
+  left: 42px
+  top: 4px
+  font-size: 12px
+  line-height: 17px
+  font-weight: 800
+  text-align: center
+  border-radius: 20px
+  background-color: #AF3332
+  height: 17px
+  width: 17px
+  color: #fff
+  box-shadow: 0 0 0 2px #fff
+
+.product-tile
+  text-align: center
+  padding: 48px
+  background-repeat: no-repeat
+  background-position: 0% 30%
+  background-size: 96%
+
+.is-horizontal-center
+  justify-content: center
+
+.zag-out:after
+  top: 100%
+  background: linear-gradient(153deg, white 33.333%, transparent 0), linear-gradient(-153deg, white 33.333%, transparent 0)
+
+.zig
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    left: 0
+    width: 100%
+    height: 2rem
+    background-size: 3rem 100%
+    background-position: center
+
+.shadow
+  filter: drop-shadow(rgba(0, 0, 0, 0.05) 0px 2px 2px)
+
+.has-navbar-fixed-top
+  padding-top: 8rem !important
+
+.cart
+  width: 25rem
+  box-shadow: 0 9.38125px 43.3324px rgba(0,0,0,.0417275),0 5.25905px 24.2918px rgba(0,0,0,.035),0 2.79304px 12.9012px rgba(0,0,0,.0282725),0 1.16225px 5.36848px rgba(0,0,0,.0196802)
+  background-color: #fff
+  position: fixed
+  display: none
+  top: 0
+  bottom: 0
+  overflow: auto
+  height: 100%
+  right: 0
+  z-index: 9999
+  -webkit-transition: all 0.5s
+  transition: all 0.5s
+  -webkit-transform: translateX(100%) translate(0, 0)
+  transform: translateX(100%) translate(0, 0)
+  &.visible
+    -webkit-transform: translate(0, 0)
+    transform: translate(0, 0)
+    -webkit-animation-name: slideIn
+    animation-name: slideIn
+    -webkit-animation-duration: 0.5s
+    animation-duration: 0.5s
+    -webkit-animation-timing-function: ease
+    animation-timing-function: ease
+    display: block
+  +mobile
+    width: 100%
+
+.cart-backdrop
+  z-index: 9998
+  display: none
+  background-color: rgba(0, 0, 0, 0.5)
+  bottom: 0
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+  opacity: 0
+  transition: all 0.5s
+  &.visible
+    opacity: 1
+    display: block
+
+@-webkit-keyframes slideIn
+  from
+    -webkit-transform: translateX(100%) translate(0, 0)
+    transform: translateX(100%) translate(0, 0)
+  to
+    -webkit-transform: translateX(0) translate(0, 0)
+    transform: translateX(0) translate(0, 0)
+
+@keyframes slideIn
+  from
+    -webkit-transform: translateX(100%)
+    transform: translateX(100%) translate(0, 0)
+  to
+    -webkit-transform: translateX(0)
+    transform: translateX(0) translate(0, 0)
+
+.delete
+  background-color: transparent !important
+  border-radius: 4px !important
+  &:hover
+    background-color: #EFEFEF !important
+  &:before
+    background-color: #333333 !important
+  &:after
+    background-color: #333333 !important
+
+hr
+  background-color: #C6C6C6 !important
+  height: 1px !important
+  margin-top: 0 !important
+  margin-bottom: 1rem !important
+
+.quantity>select
+  border: none !important
+  background-color: #EFEFEF !important
+  &:hover
+    background-color: #DBDBDB !important
+
+.select.quantity
+  &:after
+    border-width: 2px !important
+    border-radius: 0 !important
+    border-color: #333 !important
+
+.paypal>span.icon
+  margin-left: .6rem !important
+  width: 7.2rem !important
+  height: auto !important
+
+::-webkit-inner-spin-button
+  display: none
