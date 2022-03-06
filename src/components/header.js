@@ -59,7 +59,7 @@ return (
         </div>
         </div>
         <div className="column right">
-          <a href="#" className="navbar-item" title="Cart" style={{ borderRadius: '8px' }} onClick={handleCartClick}>
+          <a className="navbar-item" title="Cart" style={{ borderRadius: '8px' }} onClick={handleCartClick}>
             <div className="icon-text" style={{ lineHeight: '2.25rem' }}>
               <div className="items">{cartCount}</div>
               <span className="icon" style={{ height: '2.25rem', width: '2.25rem' }}>
