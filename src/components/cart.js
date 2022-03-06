@@ -10,9 +10,9 @@ const Cart = () => {
   const priceWithShipping = totalPrice / 100 + 4.90;
 return (
   <>
-  <Helmet>
-        <html lang="de" className={`${shouldDisplayCart ? 'is-clipped' : ''}`} />
-      </Helmet>
+    <Helmet>
+      <html lang="de" className={`${shouldDisplayCart ? 'is-clipped' : ''}`} />
+    </Helmet>
     <div className="cart-wrapper">
     <div onClick={() => {
       handleCloseCart()
@@ -25,18 +25,18 @@ return (
     }} className="button is-medium is-primary is-fullwidth" style={{ justifyContent: 'flex-start', borderRadius: '0px', backgroundColor: '#f4f4f4 !important' }}>
         <span className="icon">
           <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.5 17L2.51472 9.01472L10.5 1.02944" stroke="currentcolor" stroke-width="2.5" />
+            <path d="M10.5 17L2.51472 9.01472L10.5 1.02944" stroke="currentcolor" strokeWidth="2.5" />
           </svg>
         </span>
         <span>Weiter einkaufen</span>
       </button>
       <div className="m-5">
-        {lastClicked == 'add' ?
+        {lastClicked === 'add' ?
         <div className="notification is-success is-light">
           <div className="columns is-variable is-2 is-vcentered is-mobile">
             <div className="column is-narrow">
               <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.42065 8.96403L10.4362 17.1256L22.8683 1.84652" stroke="#2DB872" stroke-width="4" />
+                <path d="M1.42065 8.96403L10.4362 17.1256L22.8683 1.84652" stroke="#2DB872" strokeWidth="4" />
               </svg>
             </div>
             <div className="column">
@@ -117,7 +117,7 @@ return (
             <span>Zur Kasse</span>
             <span className="icon">
               <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.49976 17L16.485 9.01472L8.49976 1.02944" stroke="currentcolor" stroke-width="3" />
+                <path d="M8.49976 17L16.485 9.01472L8.49976 1.02944" stroke="currentcolor" strokeWidth="3" />
               </svg>
             </span>
           </button>
@@ -135,7 +135,7 @@ return (
                 </g>
                 <defs>
                   <filter id="filter0_d" x="0" y="0" width="127.5" height="32.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
                     <feOffset dx="0.6" dy="1.6"/>
                     <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
