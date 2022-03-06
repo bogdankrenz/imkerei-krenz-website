@@ -31,7 +31,7 @@ const IndexPage = () => {
         <Products />
       </section>
         <Cart />
-        <DebugCart />
+        {/* <DebugCart /> */}
       </Layout>
     </CartProvider>
       </>
