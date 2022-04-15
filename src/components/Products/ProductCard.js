@@ -16,7 +16,7 @@ const ProductCard = ({ sku }) => {
     <div class="product-tile" style={{ backgroundColor: `#${sku.color}`, backgroundImage: `url(${Flower})`}}>
       <div class="is-flex is-horizontal-center mb-4">
         <figure class="image" style={{ width: '60%' }}>
-          <img src={Honeyjar} />
+          <img src={sku.image[0]} />
         </figure>
       </div>
       <h2 class="title is-4 mb-2">{sku.name}</h2>

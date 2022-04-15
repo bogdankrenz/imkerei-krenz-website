@@ -19,6 +19,7 @@ export default (props) => (
               product {
                 id
                 name
+                images
                 metadata {
                     color
                 }
@@ -36,6 +37,7 @@ export default (props) => (
             name: price.product.name,
             price: price.unit_amount,
             currency: price.currency,
+            image: price.product.images,
             color: price.product.metadata.color
           }
           return <ProductCard key={price.id} sku={newSku} />

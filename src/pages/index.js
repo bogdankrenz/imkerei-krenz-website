@@ -17,8 +17,8 @@ const IndexPage = () => {
       mode="payment"
       cartMode="client-only"
       stripe={process.env.GATSBY_STRIPE_PUBLISHABLE_KEY}
-      successUrl={`${window.location.origin}/page-2/`}
-      cancelUrl={`${window.location.origin}/`}
+      successUrl={`${typeof window !== 'undefined' && window.location.origin}/danke/`}
+      cancelUrl={`${typeof window !== 'undefined' && window.location.origin}/`}
       currency="EUR"
       allowedCountries={['DE']}
       shippingRates={["shr_1InXfnJULUxn1qHPWWqhlVSx"]}
