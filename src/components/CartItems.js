@@ -9,7 +9,7 @@ const CartItems = () => {
   for (const sku in cartDetails) {
     const entry = cartDetails[sku]
     const options = []
-    for (let quantity = 1; quantity <= 20; ++quantity)
+    for (let quantity = 1; quantity <= 20 || quantity <= entry.quantity; ++quantity)
     options.push(<option selected={quantity === entry.quantity ? 'selected' : ''} key={quantity} value={quantity}>{quantity}</option>)
     entries.push(
       <div className="columns is-variable is-3 is-mobile">
