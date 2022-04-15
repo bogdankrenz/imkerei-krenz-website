@@ -5,6 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "imkerei-krenz-website",
+    siteUrl: "https://imkereikrenz.de",
   },
   plugins: [
     {
