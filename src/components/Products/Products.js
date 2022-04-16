@@ -1,6 +1,6 @@
-import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
-import ProductCard from './ProductCard'
+import React from "react";
+import { graphql, StaticQuery } from "gatsby";
+import ProductCard from "./ProductCard";
 
 export default (props) => (
   <StaticQuery
@@ -21,7 +21,7 @@ export default (props) => (
                 name
                 images
                 metadata {
-                    color
+                  color
                 }
               }
             }
@@ -30,7 +30,7 @@ export default (props) => (
       }
     `}
     render={({ prices }) => (
-        <div class="columns is-multiline">
+      <div class="columns is-multiline">
         {prices.edges.map(({ node: price }) => {
           const newSku = {
             sku: price.id,
@@ -38,11 +38,11 @@ export default (props) => (
             price: price.unit_amount,
             currency: price.currency,
             image: price.product.images,
-            color: price.product.metadata.color
-          }
-          return <ProductCard key={price.id} sku={newSku} />
+            color: price.product.metadata.color,
+          };
+          return <ProductCard key={price.id} sku={newSku} />;
         })}
       </div>
     )}
   />
-)
+);
