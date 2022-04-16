@@ -1,5 +1,7 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
+import slugify from "slugify";
+
 import ProductCard from "./ProductCard";
 
 export default (props) => (
@@ -32,6 +34,10 @@ export default (props) => (
     render={({ prices }) => (
       <div class="columns is-multiline">
         {prices.edges.map(({ node: price }) => {
+          const newSlug = slugify(price.product.name, {
+            lower: true,
+            locale: "de",
+          });
           const newSku = {
             sku: price.id,
             name: price.product.name,
@@ -40,7 +46,7 @@ export default (props) => (
             image: price.product.images,
             color: price.product.metadata.color,
           };
-          return <ProductCard key={price.id} sku={newSku} />;
+          return <ProductCard key={price.id} sku={newSku} slug={newSlug} />;
         })}
       </div>
     )}

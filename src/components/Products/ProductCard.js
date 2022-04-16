@@ -1,11 +1,11 @@
 import React from "react";
-import Honeyjar from "../../images/honey.png";
-import Flower from "../../images/flower2.svg";
 import { Link } from "gatsby";
-
 import { useShoppingCart, formatCurrencyString } from "use-shopping-cart";
 
-const ProductCard = ({ sku }) => {
+import Flower from "../../images/flower2.svg";
+import Honeyjar from "../../images/honey.png";
+
+const ProductCard = ({ sku, slug }) => {
   const { storeLastClicked, handleCartClick, addItem } = useShoppingCart();
   const price = formatCurrencyString({
     value: sku.price,
@@ -41,7 +41,7 @@ const ProductCard = ({ sku }) => {
         >
           In den Warenkorb
         </button>
-        <Link to={`/${sku.name}`}>{sku.name}</Link>
+        <Link to={`/${slug}`}>{sku.name}</Link>
       </div>
     </div>
   );
