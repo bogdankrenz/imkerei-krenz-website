@@ -29,7 +29,6 @@ const DetailPage = (props) => {
   // For detail page we need a single query to get the info for a certain product
 
   // TODO: Create single query for detail pase
-  console.log(props);
   return (
     <>
       <Helmet>
@@ -46,6 +45,7 @@ const DetailPage = (props) => {
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 backgroundSize: "100%",
+                maxHeight: "416px",
               }}
             >
               <img src={Pic} style={{ width: "60%" }} alt="honey" />
@@ -75,22 +75,159 @@ const DetailPage = (props) => {
               >
                 7,00 €
               </p>
-              <p>500 g</p>
-              <p>Grundpreis 26,56 € / kg</p>
-              <p>inkl. MwSt.</p>
-              <p>Versand wird beim Checkout berechnet</p>
-              <p>Lieferzeit: 2 bis 4 Werktage</p>
-              <p>Anzahl:</p>
-              <span>
-                <button onClick={decrementCount}>-</button>
+              <p
+                style={{
+                  fontFamily: "Lota Grotesque Alt 2",
+                  fontStyle: "normal",
+                  fontWeight: 600,
+                  fontSize: "20px",
+                  lineHeight: "22px",
+                  marginTop: "16px",
+                }}
+              >
+                500 g
+              </p>
+              <p
+                style={{
+                  fontFamily: "Lota Grotesque Alt 2",
+                  fontStyle: "normal",
+                  fontWeight: 400,
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                  marginTop: "8px",
+                }}
+              >
+                Grundpreis 26,56 € / kg
+              </p>
+              <p
+                style={{
+                  fontFamily: "Lota Grotesque Alt 2",
+                  fontStyle: "normal",
+                  fontWeight: 400,
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                  marginTop: "8px",
+                }}
+              >
+                inkl. MwSt. <br />
+                Versand wird beim Checkout berechnet <br />
+                Lieferzeit: 2 bis 4 Werktage
+              </p>
+              <p
+                style={{
+                  fontFamily: "Lota Grotesque Alt 2",
+                  fontStyle: "normal",
+                  fontWeight: 400,
+                  fontSize: "16px",
+                  lineHeight: "24px",
+                  marginTop: "16px",
+                }}
+              >
+                Anzahl:
+              </p>
+              <span
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  // justifyContent: "center",
+                  alignItems: "center",
+                  marginTop: "8px",
+                }}
+              >
+                <a
+                  role={"button"}
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    background: "#3C64D2",
+                    borderRadius: "8px",
+                    width: "48px",
+                    height: "48px",
+                    color: "white",
+                    fontFamily: "Lota Grotesque Alt 2",
+                    fontStyle: "normal",
+                    fontWeight: 700,
+                    fontSize: "20px",
+                    lineHeight: "22px",
+                    marginRight: "8px",
+                  }}
+                  onClick={decrementCount}
+                  value={"-"}
+                >
+                  -
+                </a>
                 <input
+                  style={{
+                    fontFamily: "Lota Grotesque Alt 2",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    fontSize: "20px",
+                    lineHeight: "22px",
+                    textAlign: "center",
+                    padding: "10px 10px",
+                    marginRight: "8px",
+
+                    width: "48px",
+                    height: "48px",
+                    /* White */
+
+                    background: "#FFFFFF",
+                    /* Grey */
+
+                    border: "1px solid #DBDBDB",
+                    borderRadius: "8px",
+                  }}
                   type="number"
                   min={1}
                   value={count}
                   onChange={handleChange}
                 />
-                <button onClick={incrementCount}>+</button>
+                <a
+                  role={"button"}
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    background: "#3C64D2",
+                    borderRadius: "8px",
+                    width: "48px",
+                    height: "48px",
+                    color: "white",
+                    fontFamily: "Lota Grotesque Alt 2",
+                    fontStyle: "normal",
+                    fontWeight: 700,
+                    fontSize: "20px",
+                    lineHeight: "22px",
+                  }}
+                  onClick={incrementCount}
+                >
+                  +
+                </a>
               </span>
+              <button
+                class="button is-info is-medium is-rounded has-text-weight-bold"
+                style={{ marginTop: "24px" }}
+                // TODO: onClick will work when we retrieve the information for one product with a query
+                // onClick={() => {
+                //   addItem(sku);
+                //   storeLastClicked("add");
+                //   handleCartClick();
+                // }}
+              >
+                In den Warenkorb legen
+              </button>
+              <p style={{ marginTop: "48px" }}>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. labore et dolore magna aliquyam
+                erat, sed diam voluptua. At vero eos et accusam et justo duo
+                dolores et ea rebum. At vero eos et accusam et justo duo dolores
+                et ea rebum.
+              </p>
             </div>
           </div>
         </div>
